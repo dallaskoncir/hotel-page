@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>The Booking Hotel</title>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!-- Google fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  <!-- Flickity styles -->
+  <link rel="stylesheet" href="css/flickity.css">
+  <!-- Pickadate styles -->
+  <link rel="stylesheet" href="bower_components/pickadate/lib/themes/default.css">
+  <link rel="stylesheet" href="bower_components/pickadate/lib/themes/default.date.css">
+  <!-- Selectric -->
+  <link rel="stylesheet" href="css/selectric.css">
+  <!-- My styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <section class="topbar">
+    <div class="wrapper">
+      <div class="weather">
+        <img src="images/temp-icon.png" alt="Temperature">
+        <p class="city">London DC, GR 17&deg;C</p>
+      </div>
+      <div class="login">
+        <div class="langDropdown">
+          <img src="images/union-jack.png" alt="English">
+          <i class="fa fa-chevron-down"></i>
+        </div>
+        <div class="links">
+          <a href="#">Login</a>
+          <span class="divider">|</span>
+          <a href="#">Register</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <header class="header">
+    <div class="wrapper">
+      <h1 class="logo">
+        Hotel Booking
+      </h1>
+      <button class="navbarToggle">
+        <i class="fa fa-bars"></i>
+      </button>
+      <nav class="mainNav">
+        <ul>
+          <li class="current"><a href="#">Home</a></li>
+          <li><a href="#">Accommodations</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Pages <i class="fa fa-chevron-down"></i></a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li class="phone">
+            <a href="#">
+              <img src="images/call-icon.png" alt="Call Us">
+              123 456 7890
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="intro">
+    <div class="gallery js-flickity" data-flickity-options='{ "imagesLoaded": true }'>
+      <img src="http://placehold.it/1970x734" alt="Slide 1">
+      <img src="http://placehold.it/1970x734" alt="Slide 2">
+      <img src="http://placehold.it/1970x734" alt="Slide 3">
+    </div>
+    <div class="offerWrapper">
+      <div class="offer">
+        <p class="title">Special Offer on Booking</p>
+        <p class="price">50<span class="percent">%</span><sup>off</sup></p>
+      </div>
+      <div class="featureText">
+        <h2>Book Your Summer <span class="year">2015</span><br /><span>Holidays with <strong>Hotel</strong>!</span></h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="bookingConsole">
+    <div class="wrapper">
+      <p class="bookRoom">Book Your<br /><span>Rooms</span></p>
+      <form action="" class="booking">
+        <div class="field arrive">
+          <input type="text" name="arrive" id="arrive" placeholder="Arrival">
+          <i class="calIcon fa fa-calendar-o"></i>
+        </div>
+        <div class="field depart">
+          <input type="text" name="depart" id="depart" placeholder="Departure">
+          <i class="calIcon fa fa-calendar-o"></i>
+        </div>
+        <div class="field">
+          <select name="rooms" id="rooms">
+            <option value="">Rooms</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+        <div class="field">
+          <select name="adults" id="adults">
+            <option value="">Adults</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+        <div class="field">
+          <select name="children" id="children">
+            <option value="">Children</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+        <!-- <div class="field">
+          <input type="text" name="rooms" id="rooms" placeholder="1 Room">
+          <i class="calIcon fa fa-chevron-down"></i>
+        </div>
+        <div class="field">
+          <input type="text" name="adults" id="adults" placeholder="1 Adult">
+          <i class="calIcon fa fa-chevron-down"></i>
+        </div>
+        <div class="field">
+          <input type="text" name="children" id="children" placeholder="0 Child">
+          <i class="calIcon fa fa-chevron-down"></i>
+        </div> -->
+        <div class="submit">
+          <button type="submit">Book</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="hotelFeatures">
+    <div class="wrapper">
+      <article class="feature">
+        <header>
+          <i><img src="images/restaurant-icon.png" alt="Restaurant"></i>
+          <h4>Restaurant</h4>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos praesentium officiis quas.</p>
+      </article>
+      <article class="feature">
+        <header>
+          <i><img src="images/golf-club.png" alt="Sports Club"></i>
+          <h4>Sports Club</h4>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos praesentium officiis quas.</p>
+      </article>
+      <article class="feature">
+        <header>
+          <i><img src="images/pickup-icon.png" alt="Pickup"></i>
+          <h4>Pick Up</h4>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos praesentium officiis quas.</p>
+      </article>
+      <article class="feature">
+        <header>
+          <i><img src="images/bar-icon.png" alt="Bar"></i>
+          <h4>Bar</h4>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos praesentium officiis quas.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="selectRoom">
+    <h3>Select Your Room</h3>
+    <div class="wrapper">
+      <figure class="room mainRoom">
+        <img src="http://placehold.it/749x456" alt="Deluxe Room">
+        <div class="description">
+          <h5>
+            Deluxe Room 
+            <span class="divider">|</span>
+            <span class="price">$180</span>
+            <span class="night">/night</span>
+          </h5>
+          <a class="bookNow" href="#">Book Now</a>
+        </div>
+      </figure>
+      <aside class="rooms">
+        <figure class="room room1">
+          <img src="http://placehold.it/361x211" alt="Classic Room">
+          <div class="description">
+            <h5>
+              Classic Room 
+              <span class="divider">|</span>
+              <span class="price">$180</span>
+              <span class="night">/night</span>
+            </h5>
+            <a class="bookNow" href="#">Book Now</a>
+          </div>
+        </figure>
+        <figure class="room room2">
+          <img src="http://placehold.it/361x211" alt="Executive Room">
+          <div class="description">
+            <h5>
+              Executive Room 
+              <span class="divider">|</span>
+              <span class="price">$180</span>
+              <span class="night">/night</span>
+            </h5>
+            <a class="bookNow" href="#">Book Now</a>
+          </div>
+        </figure>
+      </aside>
+    </div>
+    <a href="#" class="btn">View All Rooms</a>
+  </section>
+
+  <section class="showcase">
+    <h3>Hotel Showcase</h3>
+    <div class="gallery js-flickity" data-flickity-options='{ "imagesLoaded": true, "wrapAround": true }'>
+      <img src="http://placehold.it/263x185" alt="Gallery 1">
+      <img src="http://placehold.it/263x185" alt="Gallery 2">
+      <img src="http://placehold.it/263x185" alt="Gallery 3">
+      <img src="http://placehold.it/263x185" alt="Gallery 4">
+      <img src="http://placehold.it/263x185" alt="Gallery 5">
+      <img src="http://placehold.it/263x185" alt="Gallery 6">
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="wrapper">
+      <div class="news">
+        <h6>News</h6>
+        <ol class="newsItems">
+          <li>
+            <img src="http://placehold.it/68x57" alt="News 1">
+            <div class="content">
+              <p><strong>Lorem ipsum dolor sit amet.</strong></p>
+              <p class="date">14 May 2014</p>
+            </div>
+          </li>
+          <li>
+            <img src="http://placehold.it/68x57" alt="News 2">
+            <div class="content">
+              <p><strong>Lorem ipsum dolor sit amet.</strong></p>
+              <p class="date">15 May 2014</p>
+            </div>
+          </li>
+          <li>
+            <img src="http://placehold.it/68x57" alt="News 3">
+            <div class="content">
+              <p><strong>Lorem ipsum dolor sit amet.</strong></p>
+              <p class="date">17 May 2014</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+      <div class="aboutHotel">
+        <h6>About Hotel</h6>
+        <figure><img src="http://placehold.it/524x185" alt=""></figure>
+        <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque laudantium, iusto, dolore adipisci quas, odit quisquam autem quam eveniet earum suscipit.</figcaption>
+      </div>
+      <div class="reviews">
+        <h6>Customer Says</h6>
+        <article class="review">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam quas expedita, esse qui animi.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </article>
+        <div class="reviewer">
+          <img src="http://placehold.it/68x57" alt="">
+          <div class="content">
+            <strong>John Doe</strong>
+            <a href="#">www.john.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrapper">
+      <div class="phone">
+        <small>Call Us</small>
+        <a href="#">123 456 7890</a>
+      </div>
+      <div class="mail">
+        <small>Email Us</small>
+        <a href="#">info@hotelbooking.com</a>
+      </div>
+      <div class="signup">
+        <form action="">
+          <div class="field">
+            <input type="email" name="email" id="email" placeholder="Enter Id For Newsletter">
+            <button type="submit">Go</button>
+          </div>
+        </form>
+      </div>
+      <div class="social">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-google-plus"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footerTop">
+        <div class="location">
+          <img src="images/logo-footer.png" alt="Hotel Booking">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste eius harum, a praesentium quae recusandae!</p>
+          <p class="address">
+            <i class="fa fa-map-marker"></i>
+            St Amsterdam finland, United Stats of AKY16 8PN
+          </p>
+        </div>
+        <nav class="utilityNav">
+          <h6>Quick Links</h6>
+          <ul class="left">
+            <li><a href="#">Rooms</a></li>
+            <li><a href="#">Food &amp; Drinks</a></li>
+            <li><a href="#">Beach Venues</a></li>
+            <li><a href="#">Amenities</a></li>
+          </ul>
+          <ul class="right">
+            <li><a href="#">Noordwijk</a></li>
+            <li><a href="#">Wellness</a></li>
+            <li><a href="#">Manifesto</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="map">
+          <h6>We are Global</h6>
+          <img src="images/map.png" alt="We are Global">
+        </div>
+      </div>
+      <div class="footerBottom">
+        <p>&copy; 2015 Hotelbooking. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Javascripts -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.2/flickity.pkgd.min.js"></script>
+  <script src="bower_components/pickadate/lib/picker.js"></script>
+  <script src="bower_components/pickadate/lib/picker.date.js"></script>
+  <script src="js/jquery.selectric.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

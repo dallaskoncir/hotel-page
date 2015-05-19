@@ -1,0 +1,87 @@
+h1,h2,h3,h4,h5,h6 {
+  font-family: $headingFont;
+  text-transform: uppercase;
+}
+
+h1 {
+
+}
+
+h2 {
+  font-size: rem-calc(36px);
+  font-weight: 400;
+  color: #141e2a;
+  strong {
+    font-weight: 700;
+    color: $phoneRed;
+  }
+  span {
+    font-size: rem-calc(30px);
+  }
+  span.year {
+    font-family: $navFont;
+    font-size: rem-calc(36px);
+  }
+}
+
+h3 {
+  font-size: rem-calc(30px);
+  color: $headingColor;
+  font-weight: 400;
+  &:after {
+    display: block;
+    content: " ";
+    width: 103px;
+    height: 21px;
+    margin: 20px auto 60px;
+    background-image: url(../images/fleur.png);
+  }
+}
+
+h4 {
+  font-family: $mainFont;
+  font-size: 1rem;
+  color: $featureBlue;
+  padding: 12px 0 24px;
+}
+
+h5 {
+  font-family: $navFont;
+  text-transform: none;
+  color: #444444;
+  font-weight: 400;
+  float: left;
+  line-height: 2.2;
+  .divider {
+    color: #d8d8d8;
+    padding: 0 5px;
+  }
+  .price {
+    font-size: 1rem;
+  }
+  .night {
+    font-size: rem-calc(11px);
+  }
+}
+
+.mainRoom .description h5 {
+  font-size: rem-calc(21px);
+  line-height: 1.65;
+  .divider {
+    padding: 0 10px;
+  }
+  .price {
+    font-size: rem-calc(18px);
+  }
+}
+
+h6 {
+  font-size: rem-calc(20px);
+  color: $headingColor;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.footer h6 {
+  color: $bg;
+}
